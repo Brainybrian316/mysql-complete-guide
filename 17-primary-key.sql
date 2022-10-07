@@ -3,8 +3,6 @@ DROP TABLE employers;
 DROP TABLE conversations;
 
 -- psql
-
-
 CREATE TABLE users (
   id SERIAL PRIMARY KEY,
   full_name VARCHAR(300) NOT NULL,
