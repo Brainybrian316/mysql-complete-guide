@@ -5,5 +5,5 @@ CREATE TABLE employers (
   -- yearly_revenue FLOAT(5, 2)
   -- exact approach
   yearly_revenue NUMERIC(5, 2),
-  is_hiring BOOLEAN DEFAULT FALSE 
-  );
+  is_hiring BOOLEAN DEFAULT FALSE
+);
