@@ -1,11 +1,11 @@
 -- psql + ENUM we have to create a custom type first
-CREATE TYPE employment_status AS ENUM('employed', 'self-employed', 'unemployed');
+-- CREATE TYPE employment_status AS ENUM('employed', 'self-employed', 'unemployed');
 
 CREATE TABLE users (
   full_name VARCHAR(200),
   yearly_salary INT ,
   -- MySQL
-  -- current_status ENUM('employed', 'self-employed', 'unemployed')
+  current_status ENUM('employed', 'self-employed', 'unemployed')
   -- PSQL
-  current_status employment_status
+  -- current_status employment_status
 );
