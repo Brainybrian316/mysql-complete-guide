@@ -1,0 +1,14 @@
+-- create a database
+-- CREATE DATABASE online_shop;
+
+-- create and configure table
+CREATE TABLE products (
+  name VARCHAR(200), 
+  price NUMERIC(10, 2), -- approximate so this type is best
+  description TEXT,
+  amount_in_stock SMALLINT,
+  image_path
+)
+
+
+
