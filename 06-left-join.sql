@@ -6,4 +6,5 @@
 --  *will get all address data and only users that have a relation/match with the address table
 SELECT *
 FROM addresses AS a
-LEFT JOIN users AS u ON a.id = u.address_id;
+LEFT JOIN users AS u ON a.id = u.address_id
+LEFT JOIN cities AS c ON c.id = a.city_id;
