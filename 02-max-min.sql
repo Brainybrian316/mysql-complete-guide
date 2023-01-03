@@ -1,0 +1,27 @@
+-- -- @max 
+-- SELECT MAX(num_seats)
+-- FROM tables;
+-- -- @min
+-- SELECT MIN(num_seats)
+-- FROM tables;
+-- -- @max
+-- SELECT MAX(amount_billed) AS max_billed,
+--   MAX(amount_tipped) AS max_tipped
+-- FROM bookings;
+-- --  @min max abc
+-- SELECT MIN(category),
+--   MAX(category)
+-- FROM tables;
+-- --  @min max dates
+-- SELECT MIN(booking_date),
+--   MAX(booking_date)
+-- FROM bookings;
+-- ______________Notes _______________ --
+-- max shows the maximum value in a column
+--  min shows the minimum value in a column
+--  you cannot check entire table *
+--  you can have two agg funcs in a query
+-- can add alias to agg funcs
+--  can use max and min for strings
+-- FOR TEXT min on text gives you the first item from abc order
+--  FOR TEXT max will give you the last item from abc orcer
