@@ -1,0 +1,47 @@
+-- -- @with group by
+-- SELECT booking_date,
+--   SUM(num_guests)
+-- FROM bookings
+-- GROUP BY booking_date;
+-- -- @with one inner join
+-- SELECT p.name,
+--   SUM(b.num_guests)
+-- FROM payment_methods AS p
+--   INNER JOIN bookings AS b ON p.id = b.payment_id
+-- GROUP BY p.name;
+-- -- @with multiple columns
+-- SELECT p.name,
+--   b.booking_date,
+--   SUM(b.num_guests)
+-- FROM payment_methods AS p
+--   INNER JOIN bookings AS b ON p.id = b.payment_id
+-- GROUP BY p.name,
+--   b.booking_date;
+-- -- @with multiple columns and agg funcs
+-- SELECT p.name,
+--   b.booking_date,
+--   SUM(b.num_guests),
+--   ROUND(AVG(amount_tipped))
+-- FROM payment_methods AS p
+--   INNER JOIN bookings AS b ON p.id = b.payment_id
+-- GROUP BY p.name,
+--   b.booking_date;
+-- --  @with formatted booking_date
+-- SELECT p.name,
+--   DATE_FORMAT(b.booking_date, '%m-%d-%Y') as booking_date,
+--   SUM(b.num_guests),
+--   ROUND(AVG(amount_tipped))
+-- FROM payment_methods AS p
+--   INNER JOIN bookings AS b ON p.id = b.payment_id
+-- GROUP BY p.name,
+--   b.booking_date;
+-- --  @with formatted booking_date and ordered from earliest to latest date
+-- SELECT p.name,
+--   DATE_FORMAT(b.booking_date, '%m-%d-%Y') as booking_date,
+--   SUM(b.num_guests),
+--   ROUND(AVG(amount_tipped))
+-- FROM payment_methods AS p
+--   INNER JOIN bookings AS b ON p.id = b.payment_id
+-- GROUP BY p.name,
+--   b.booking_date
+-- ORDER BY booking_date;
