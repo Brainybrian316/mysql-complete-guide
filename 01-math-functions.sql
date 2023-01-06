@@ -1,0 +1,22 @@
+-- -- @multiply func
+-- SELECT price * billing_frequency
+-- FROM memberships;
+-- -- @multiply func with agg func for specific id's
+-- SELECT SUM(price * billing_frequency)
+-- FROM memberships
+-- WHERE id IN (1, 2, 3);
+-- -- @CEIL 
+-- SELECT CEILING(consumption)
+-- FROM memberships;
+-- -- @FLOOR 
+-- SELECT FLOOR(consumption)
+-- FROM memberships;
+-- -- @ROUND 
+-- SELECT ROUND(consumption, 2)
+-- FROM memberships;
+-- -- !mysql TRUNCATE (needs two arguments)
+-- SELECT TRUNCATE(consumption, 1)
+-- FROM memberships;
+-- -- *posgres TRUNC (needs two arguments)
+-- SELECT TRUNC(consumption, 1)
+-- FROM memberships;
