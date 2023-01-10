@@ -15,10 +15,10 @@
 -- SELECT id
 -- FROM customers
 -- WHERE first_name NOT IN('Max', 'Manu');
--- @filtering with IN via a subquery
-SELECT email
-FROM customers
-WHERE id IN(
-    SELECT customer_id
-    FROM orders
-  );
+-- -- @filtering with IN via a subquery
+-- SELECT email
+-- FROM customers
+-- WHERE id IN(
+--     SELECT customer_id
+--     FROM orders
+--   );
