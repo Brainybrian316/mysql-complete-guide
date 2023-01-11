@@ -1,1 +1,4 @@
-START TRANSACTION;
+-- -- !mysql
+-- START TRANSACTION;
+-- *postgres
+BEGIN;
